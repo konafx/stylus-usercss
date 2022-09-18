@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name           Centering readthedocs
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    centering readthedocs
+@author         konafx
+==/UserStyle== */
+
+@-moz-document domain("readthedocs.io") {
+  /* centering content */
+  @media screen and (min-width: 1200px){
+    .wy-nav-content {
+      max-width: max(50vw, 800px);
+      margin-right: calc((100% - max(50vw, 800px)) * 3 / 5);
+      margin-left: calc((100% - max(50vw, 800px)) * 2 / 5);
+    }
+  }
+}
